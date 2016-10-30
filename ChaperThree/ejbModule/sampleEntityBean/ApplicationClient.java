@@ -9,6 +9,7 @@ import javax.naming.NamingException;
 
 public class ApplicationClient {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws NamingException, RemoteException, CreateException {
 		Context initial = new InitialContext();
 		Context environment = (Context) initial.lookup("java:comp/env");
