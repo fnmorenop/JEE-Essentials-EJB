@@ -55,5 +55,10 @@ public class Converter implements SessionBean {
     public double conversion(double Celsius) {
     	return Celsius*1.8 + 32;
     }
+    
+    public void setMessage(double celcius) {
+    	double farenheit = conversion(celcius);
+    	System.out.printf("%nEl equivalente de %+1.1f grados celcius son %1.0f grados farenheit%n", celcius, farenheit);
+    }
 
 }
